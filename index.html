@@ -3,29 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <!-- A-Frame ライブラリの読み込み -->
-    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <!-- AR.js ライブラリの読み込み -->
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
 </head>
-<body style='margin:0px; overflow:hidden;'>
-<!-- こっからA-Frame -->
-<a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
-    <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
-    <a-assets>
-        <!-- <a-asset-item id="IronMan-obj" src="./model_obj/IronMan/IronMan.obj"></a-asset-item> -->
-        <!-- <a-asset-item id="IronMan-mtl" src="./model_obj/IronMan/IronMan.mtl"></a-asset-item> -->
-        <a-asset-item id="moon-obj" src="./model_obj/44-moon-photorealistic-2k/Moon 2K.obj"></a-asset-item>
-        <a-asset-item id="moon-mtl" src="./model_obj/44-moon-photorealistic-2k/Moon 2K.mtl"></a-asset-item>
-    </a-assets>
-    <!-- こっからARの世界。マーカー上になにを展開するかを書く -->
-    <a-marker preset="hiro">
-        <!-- <a-obj-model id="santa" src="#IronMan-obj" mtl="#IronMan-mtl" position="0 0 0" scale="0.005 0.005 0.005" rotation="0 0 0"></a-obj-model> -->
-        <a-obj-model id="moon" src="#moon-obj" mtl="#moon-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
-    </a-marker>
-    <!-- arなのでこんな感じでカメラが必要らしい。 -->
-    <a-entity camera></a-entity>
-</a-scene>
-<!-- ここまででA-Frameおわり -->
+<body>
+<ul>
+    <li><a href="iron_man.html">Iron Man</a></li>
+    <li><a href="moon.html">Moon</a></li>
+    <li><a href="earth.html">Earth</a></li>
+</ul>
 </body>
 </html>
